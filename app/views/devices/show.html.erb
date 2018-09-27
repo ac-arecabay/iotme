@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+<p>Name: <%=h @device.try(:name) %></p>
+<p>Host: <%=h @device.try(:host) %></p>
+
+<%= link_to 'Edit', edit_device_path(@device) %> |
+<%= link_to 'Back', devices_path %>
