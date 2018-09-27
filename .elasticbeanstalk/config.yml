@@ -1,0 +1,30 @@
+branch-defaults:
+  dev:
+    environment: production
+    group_suffix: null
+    profile: eb-cli
+  master:
+    environment: production
+    group_suffix: null
+    profile: eb-cli
+environment-defaults:
+  production:
+    branch: master
+    repository: null
+  staging:
+    branch: dev
+    repository: null
+global:
+  application_name: iotme
+  environment: production
+  branch: master
+  default_ec2_keyname: null
+  default_platform: Ruby 2.4 (Puma)
+  default_region: us-east-1
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  repository: null
+  sc: git
+  workspace_type: Application
